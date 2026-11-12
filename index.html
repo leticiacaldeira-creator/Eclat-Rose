@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Velours | Nail Bar & Manicure Sofisticada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+
+  <!-- ================= TOPO ================= -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#inicio" class="logo">Atelier<span>Velours</span></a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#clube">Clube</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+        </ul>
+      </nav>
+      <a href="#agenda" class="btn btn-ouro">Agendar horário</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <p class="eyebrow">Nail bar &amp; cuidados desde 2018</p>
+          <h1>Mãos impecáveis,<br>delicadeza em cada <em>detalhe</em>.</h1>
+          <p class="hero-descricao">Cutilagem de alta precisão, esmaltação em gel e spa para mãos e pés em um ambiente pensado para você desacelerar. Aqui o autocuidado é um ritual.</p>
+          <div class="hero-botoes">
+            <a href="#agenda" class="btn btn-ouro">Agendar agora</a>
+            <a href="#servicos" class="btn btn-contorno">Ver serviços</a>
+          </div>
+          <ul class="hero-numeros">
+            <li><strong>8</strong><span>anos de excelência</span></li>
+            <li><strong>+6 mil</strong><span>clientes atendidas</span></li>
+            <li><strong>4,9</strong><span>nota média</span></li>
+          </ul>
+        </div>
+        <figure class="hero-imagem">
+          <img src="img/hero.jpg" alt="Nail designer finalizando esmaltação delicada no Atelier Velours">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= SERVIÇOS (Flexbox) ================= -->
+    <section class="secao" id="servicos">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Serviços de assinatura</h2>
+          <p>Cada atendimento é pensado do começo ao fim: higienização rigorosa, execução sem pressa e brilho duradouro.</p>
+        </header>
+
+        <div class="cards-servicos">
+          <article class="card-servico">
+            <span class="card-numero">01</span>
+            <h3>Manicure Clássica</h3>
+            <p>Cutilagem delicada, lixamento técnico, hidratação profunda e esmaltação tradicional de alta cobertura.</p>
+            <div class="card-rodape">
+              <div class="card-preco"><strong>R$ 55</strong><small>45 min</small></div>
+              <a href="#agenda" class="btn btn-contorno btn-pequeno">Agendar</a>
+            </div>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-numero">02</span>
+            <h3>Esmaltação em Gel</h3>
+            <p>Brilho espelhado e durabilidade de até 21 dias sem lascar, com secagem imediata em cabine LED.</p>
+            <div class="card-rodape">
+              <div class="card-preco"><strong>R$ 85</strong><small>1h10</small></div>
+              <a href="#agenda" class="btn btn-contorno btn-pequeno">Agendar</a>
+            </div>
+          </article>
+
+          <article class="card-servico">
+            <span class="card-numero">03</span>
+            <h3>Spa dos Pés Velours</h3>
+            <p>Escalda-pés aromático, esfoliação suave, hidratação com parafina fria e pedicure completa.</p>
+            <div class="card-rodape">
+              <div class="card-preco"><strong>R$ 75</strong><small>50 min</small></div>
+              <a href="#agenda" class="btn btn-contorno btn-pequeno">Agendar</a>
+            </div>
+          </article>
+
+          <article class="card-servico card-destaque">
+            <span class="card-selo">Mais pedido</span>
+            <span class="card-numero">04</span>
+            <h3>Combo Mão + Pé Gel</h3>
+            <p>O pacote completo: manicure em gel, pedicure clássica e chá ou espumante de cortesia.</p>
+            <div class="card-rodape">
+              <div class="card-preco"><strong>R$ 135</strong><small>1h50</small></div>
+              <a href="#agenda" class="btn btn-ouro btn-pequeno">Agendar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CLUBE (Flexbox) ================= -->
+    <section class="secao secao-escura" id="clube">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Clube Velours</p>
+          <h2>Assine e mantenha suas unhas perfeitas o mês todo</h2>
+          <p>Planos mensais com horário prioritário e valor fixo. Cancele quando quiser.</p>
+        </header>
+
+        <div class="planos">
+          <article class="plano">
+            <h3>Essencial</h3>
+            <p class="plano-preco"><strong>R$ 149</strong>/mês</p>
+            <ul class="plano-lista">
+              <li>3 manicures clássicas por mês</li>
+              <li>Agendamento prioritário</li>
+              <li>10% em produtos de home care</li>
+            </ul>
+            <a href="#contato" class="btn btn-contorno">Assinar Essencial</a>
+          </article>
+
+          <article class="plano plano-destaque">
+            <span class="card-selo">Recomendado</span>
+            <h3>Rosé</h3>
+            <p class="plano-preco"><strong>R$ 229</strong>/mês</p>
+            <ul class="plano-lista">
+              <li>4 manicures por mês</li>
+              <li>2 pedicures completas</li>
+              <li>Bebida cortesia em toda visita</li>
+              <li>15% em nail art e alongamentos</li>
+            </ul>
+            <a href="#contato" class="btn btn-ouro">Assinar Rosé</a>
+          </article>
+
+          <article class="plano">
+            <h3>Velours VIP</h3>
+            <p class="plano-preco"><strong>R$ 329</strong>/mês</p>
+            <ul class="plano-lista">
+              <li>Mão e pé semanais (4x ao mês)</li>
+              <li>Horário reservado fixo</li>
+              <li>Spa das mãos todo mês</li>
+              <li>20% em todos os serviços extras</li>
+            </ul>
+            <a href="#contato" class="btn btn-contorno">Assinar VIP</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA (Grid - bento) ================= -->
+    <section class="secao" id="galeria">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Portfólio</p>
+          <h2>Trabalhos que falam por si</h2>
+          <p>Uma amostra das nossas esmaltações, alongamentos e do clima do atelier.</p>
+        </header>
+
+        <div class="bento">
+          <figure class="bento-item bento-1">
+            <img src="img/galeria-1.jpg" alt="Francesinha delicada com acabamento perfeito">
+            <figcaption>Francesinha moderna</figcaption>
+          </figure>
+          <figure class="bento-item bento-2">
+            <img src="img/galeria-2.jpg" alt="Alongamento em fibra de vidro natural">
+            <figcaption>Fibra de vidro natural</figcaption>
+          </figure>
+          <figure class="bento-item bento-3">
+            <img src="img/galeria-3.jpg" alt="Coleção de esmaltes importados em tons rosa e nude">
+            <figcaption>Paleta exclusiva</figcaption>
+          </figure>
+          <figure class="bento-item bento-4">
+            <img src="img/galeria-4.jpg" alt="Hidratação e spa para mãos">
+            <figcaption>Ritual Spa Velours</figcaption>
+          </figure>
+          <figure class="bento-item bento-5">
+            <img src="img/galeria-5.jpg" alt="Bancada esterilizada e kits individuais">
+            <figcaption>Biossegurança e materiais 100% descartáveis</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AMBIENTE (Grid - areas) ================= -->
+    <section class="secao secao-escura" id="ambiente">
+      <div class="container ambiente">
+        <h2 class="amb-titulo">Um refúgio pensado para o seu bem-estar</h2>
+        <p class="amb-texto">O Atelier Velours nasceu para transformar a ida à manicure em uma pausa sofisticada na sua rotina: poltronas confortáveis, iluminação suave, autoclave hospitalar e atendimento sem pressa.</p>
+        <ul class="amb-numeros">
+          <li><strong>5</strong><span>estações privativas</span></li>
+          <li><strong>3</strong><span>especialistas</span></li>
+          <li><strong>100%</strong><span>material esterilizado</span></li>
+        </ul>
+        <figure class="amb-imagem">
+          <img src="img/ambiente.jpg" alt="Interior do Atelier Velours com decoração em rosa bebê, branco e preto">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= EQUIPE (Grid - auto-fit) ================= -->
+    <section class="secao" id="equipe">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Quem cuida de você</p>
+          <h2>Nossas especialistas</h2>
+          <p>Profissionais certificadas com olhar artístico e técnica impecável.</p>
+        </header>
+
+        <div class="equipe">
+          <article class="barbeiro">
+            <img src="img/manicure-1.jpg" alt="Camila, especialista em cutilagem e esmaltação">
+            <div class="barbeiro-info">
+              <h3>Camila Vasconcelos</h3>
+              <p class="barbeiro-funcao">Cutilagem &amp; Clássicos</p>
+              <p>9 anos de experiência. Especialista em acabamento limpo e saúde das unhas naturais.</p>
+            </div>
+          </article>
+          <article class="barbeiro">
+            <img src="img/manicure-2.jpg" alt="Beatriz, nail designer especialista em gel">
+            <div class="barbeiro-info">
+              <h3>Beatriz Lemos</h3>
+              <p class="barbeiro-funcao">Alongamento &amp; Gel</p>
+              <p>Referência em fibra de vidro com curvatura natural e resistência.</p>
+            </div>
+          </article>
+          <article class="barbeiro">
+            <img src="img/manicure-3.jpg" alt="Helena, especialista em nail art minimalista">
+            <div class="barbeiro-info">
+              <h3>Helena Ferraz</h3>
+              <p class="barbeiro-funcao">Nail Art Minimalista</p>
+              <p>Cria designs delicados, traços finos e combinações personalizadas para cada evento.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AGENDA (Grid - tabela de horários) ================= -->
+    <section class="secao secao-escura" id="agenda">
+      <div class="container">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Agenda da semana</p>
+          <h2>Escolha seu horário</h2>
+          <p>Horários em rosa estão livres. Clique para reservar.</p>
+        </header>
+
+        <div class="agenda-rolagem">
+          <div class="agenda">
+            <span class="agenda-canto">Horário</span>
+            <span class="agenda-dia">Seg</span>
+            <span class="agenda-dia">Ter</span>
+            <span class="agenda-dia">Qua</span>
+            <span class="agenda-dia">Qui</span>
+            <span class="agenda-dia">Sex</span>
+            <span class="agenda-dia">Sáb</span>
+
+            <span class="agenda-hora">09:00</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+
+            <span class="agenda-hora">11:00</span>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+
+            <span class="agenda-hora">14:00</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+
+            <span class="agenda-hora">16:00</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+            <a class="slot livre" href="#contato">Livre</a>
+
+            <span class="agenda-hora">18:00</span>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+            <span class="slot ocupado">Ocupado</span>
+            <a class="slot livre" href="#contato">Livre</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= RODAPÉ (Flexbox) ================= -->
+  <footer class="rodape" id="contato">
+    <div class="container rodape-conteudo">
+      <div class="rodape-marca">
+        <a href="#inicio" class="logo">Atelier<span>Velours</span></a>
+        <p>Nail bar sofisticado. Atendimento exclusivo com hora marcada.</p>
+      </div>
+      <address class="rodape-contato">
+        <p>Alameda das Rosas, 412 &ndash; Jardins</p>
+        <p>Seg a Sáb, 9h às 19h</p>
+        <p><a href="mailto:contato@ateliervelours.example">contato@ateliervelours.example</a></p>
+      </address>
+      <ul class="rodape-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#clube">Clube</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+      </ul>
+    </div>
+    <p class="rodape-copy">&copy; 2026 Atelier Velours. Projeto fictício para fins didáticos.</p>
+  </footer>
+
+</body>
+</html>
